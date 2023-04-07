@@ -1,0 +1,1 @@
+untuk soal ini saya mohon maaf saya tidak berpengalaman di ansible, saya hanya tau kegunaan nya dan fungsinya, saya tidak pernah memakai ansible untuk membuat server 
