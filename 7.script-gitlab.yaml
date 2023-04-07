@@ -1,0 +1,30 @@
+# .gitlab-ci.yml
+
+# Tentukan image yang digunakan untuk menjalankan job
+image: node:latest
+
+# Definisikan stages yang akan dijalankan oleh pipeline
+stages:
+  - build
+  - test
+  - deploy
+
+# Job untuk build aplikasi
+build:
+  stage: build
+  script:
+    - npm install
+    - npm run build
+
+# Job untuk testing aplikasi
+test:
+  stage: test
+  script:
+    - npm install
+    - npm run test
+
+# Job untuk deployment aplikasi ke server production
+deploy:
+  stage: deploy
+  script:
+    - ssh user@production-server "cd /path/to/app && git pull origin master && npm install && pm2 restart app"

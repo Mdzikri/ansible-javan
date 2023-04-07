@@ -1,0 +1,25 @@
+// Jenkinsfile
+
+// Tentukan agent yang digunakan untuk menjalankan pipeline
+agent {
+    label 'jenkins-slave'
+}
+
+// Definisikan stages yang akan dijalankan oleh pipeline
+stages {
+    stage('Build') {
+        steps {
+            sh 'npm install'
+            sh 'npm run build'
+        }
+    }
+
+    stage('Test') {
+        steps {
+            sh 'npm install'
+            sh 'npm run test'
+        }
+    }
+}
+
+
