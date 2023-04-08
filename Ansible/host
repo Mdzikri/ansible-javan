@@ -1,0 +1,6 @@
+[client]
+18.191.138.82 ansible_ssh_private_key_file=/home/taufik/ansible-do_13-1.pem
+3.23.79.20 ansible_ssh_private_key_file=/home/taufik/ansible-do_13-1.pem
+
+[all:vars]
+ansible_user=ubuntu

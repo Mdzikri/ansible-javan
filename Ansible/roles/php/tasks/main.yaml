@@ -1,0 +1,4 @@
+---
+- name: Install PHP Package
+  apt: name={{ php_ver }} state=present update_cache=true
+  become: yes

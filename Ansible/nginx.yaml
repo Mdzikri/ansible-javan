@@ -1,0 +1,7 @@
+---
+- name: Install Nginx+PHP with ansible
+  hosts: client
+  become: yes
+  roles:
+  - nginx
+  - php
